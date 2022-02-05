@@ -1,0 +1,1 @@
+export const USUARIOS_CONTENT_FOLDER_NAME = "USERS";

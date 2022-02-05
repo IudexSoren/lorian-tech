@@ -1,0 +1,109 @@
+.btn {
+    align-items: center;
+    border: 2px inset transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    gap: 0.5rem;
+    justify-content: center;
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background ease-in 0.2s, box-shadow ease-in 0.2s, color ease-in 0.1s;
+}
+
+.btn span {
+    font-weight: bold;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 5px var(--black);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn-sm {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-primary {
+    background: var(--wine);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--wine-50);
+}
+
+.btn-secondary {
+    background: var(--dark-blue);
+    color: var(--light-blue);
+}
+
+.btn-secondary:hover {
+    background: var(--dark-blue-40);
+}
+
+.btn-success {
+    background: var(--success-50);
+    color: var(--success);
+}
+
+.btn-success:hover {
+    background: var(--dark-blue);
+}
+
+.btn-danger {
+    background: var(--danger-50);
+    color: var(--danger);
+}
+
+.btn-danger:hover {
+    background: var(--dark-blue);
+}
+
+.btn-warning {
+    background: var(--warning-50);
+    color: var(--warning);
+}
+
+.btn-warning:hover {
+    background: var(--dark-blue);
+}
+
+.btn-info {
+    background: var(--info-50);
+    color: var(--info);
+}
+
+.btn-info:hover {
+    background: var(--dark-blue);
+}
+
+.icon-option {
+    background: var(--dark-gray-lighter);
+    border: 1px solid rgba(55, 65, 81, 0.9);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    padding: 0.6rem 0.8rem;
+    transition: background linear 0.2s, color linear 0.1s;
+}
+
+.icon-option:hover {
+    background: var(--dark-blue-40);
+}
+
+.icon-option-sm {
+    padding: 0.387rem 0.6rem;
+}

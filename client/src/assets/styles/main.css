@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: SourceSans;
+    font-weight: 400;
+}
+
+body {
+    background: var(--dark-gray);
+}
+
+@font-face {
+    font-family: Rubik;
+    font-weight: 400;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    font-weight: 700;
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: SourceSans;
+    font-weight: 400;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceSans;
+    font-weight: 700;
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+*::-webkit-scrollbar {
+    background: var(--dark-blue);
+    border-radius: 25px;
+    height: 7px;
+    width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--black);
+    border: 1px solid var(--dark-blue);
+    border-radius: 25px;
+}
+
+.source-sans {
+    font-family: SourceSans;
+}
+
+.rubik {
+    font-family: Rubik;
+}
+
+.text-truncated {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.active {
+    background: var(--black);
+    color: var(--primary);
+    font-weight: bold;
+}

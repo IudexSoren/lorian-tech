@@ -1,0 +1,33 @@
+import * as SEGURIDAD_ACTIONS from "@/constants/ACTIONS/SEGURIDAD_ACTIONS";
+
+const actions = {
+  USUARIO__SET_USUARIOS: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__SET_USUARIOS, payload),
+  USUARIO__UNSET_USUARIOS: ({ commit }) => commit(SEGURIDAD_ACTIONS.USUARIO__UNSET_USUARIOS),
+  USUARIO__RESET: ({ commit }) => commit(SEGURIDAD_ACTIONS.USUARIO__RESET),
+  USUARIO__ADD_USUARIO: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__ADD_USUARIO, payload),
+  USUARIO__UPDATE_USUARIO: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__UPDATE_USUARIO, payload),
+  USUARIO__UPDATE_USUARIO_ESTADO: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__UPDATE_USUARIO_ESTADO, payload),
+  USUARIO__UPDATE_USUARIO_IMAGEN: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__UPDATE_USUARIO_IMAGEN, payload),
+  USUARIO__DELETE_USUARIO_IMAGEN: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__DELETE_USUARIO_IMAGEN, payload),
+  USUARIO__UPDATE_USUARIO_CLAVE_BY_CODIGO: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__UPDATE_USUARIO_CLAVE_BY_CODIGO, payload),
+  USUARIO__UPDATE_USUARIO_CLAVE: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__UPDATE_USUARIO_CLAVE, payload),
+  USUARIO__SET_CURRENT_USUARIO: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__SET_CURRENT_USUARIO, payload),
+  USUARIO__UNSET_CURRENT_USUARIO: ({ commit }) => commit(SEGURIDAD_ACTIONS.USUARIO__UNSET_CURRENT_USUARIO),
+  USUARIO__LOGIN: ({ commit }, payload) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__LOGIN, payload),
+  USUARIO__LOGOUT: ({ commit }) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__LOGOUT),
+  USUARIO__REFRESH_TOKEN: ({ commit }) =>
+    commit(SEGURIDAD_ACTIONS.USUARIO__REFRESH_TOKEN),
+};
+
+export default actions;

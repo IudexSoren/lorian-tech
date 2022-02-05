@@ -1,0 +1,105 @@
+.form-control {
+    background: var(--dark-gray);
+    border: 1px solid var(--white-50);
+    border-radius: 5px;
+    color: var(--white);
+    display: block;
+    font-weight: bold;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    transition: border-color linear 0.2s, color linear 0.2s;
+    width: 100%;
+}
+
+.form-control:disabled {
+    color: var(--white-50);
+    border-color: var(--dark-blue-40);
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.form-control-50 {
+    width: 50%;
+}
+
+.form-control-25 {
+    width: 25%;
+}
+
+.form-label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.form-error-message {
+    color: var(--danger);
+    display: block;
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+.form-control-sm {
+    padding: 0.2rem 0.3rem !important;
+}
+
+.form-select {
+    outline: none;
+    width: 100%;
+}
+
+.form-select ul {
+    outline: none;
+}
+
+.form-select li {
+    transition: background linear 0.2s;
+}
+
+.form-select li:hover {
+    background: var(--dark-gray-lighter);
+}
+
+.form-select-selected {
+    align-items: center;
+    background: var(--dark-gray);
+    border: 1px solid var(--white-50);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    gap: 0.3rem;
+    justify-content: space-between;
+    transition: border-color linear 0.2s, color linear 0.2s;
+    padding: 0.3rem 0.5rem;
+}
+
+.form-select-selected.open {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.form-select-selected span {
+    flex-grow: 1;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.form-control-flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.form-control-flex input {
+    flex-grow: 1;
+}
+
+.form-control-flex small {
+    width: 100%;
+}
